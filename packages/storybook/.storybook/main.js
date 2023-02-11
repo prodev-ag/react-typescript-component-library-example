@@ -1,4 +1,5 @@
 const path = require('path')
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 module.exports = {
   core: {
@@ -15,6 +16,7 @@ module.exports = {
   ],
   framework: "@storybook/react",
   webpackFinal: async (config) => {
+    config.resolve.plugins = [new TsconfigPathsPlugin({ extensions: config.resolve.extensions })]
     config.module.rules.push({
       test: /\.tsx?$/,
       use: [
@@ -27,10 +29,6 @@ module.exports = {
       ],
     })
     config.resolve.extensions.push('.ts', '.tsx')
-    config.resolve.alias = {
-      '@library/core': path.resolve(__dirname, '../../core/src/'),
-      '@library/icon': path.resolve(__dirname, '../../icons/src/'),
-    }
 
     return config
   },

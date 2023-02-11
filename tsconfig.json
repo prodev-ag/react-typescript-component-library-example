@@ -18,9 +18,7 @@
     "baseUrl": "packages",
     "paths": {
       "@library/core": ["packages/core/src"],
-      "@library/core/*": ["packages/core/src/*"],
       "@library/icons": ["packages/icons/src"],
-      "@library/icons/*": ["packages/icons/src/*"],
     }
   }
 }
