@@ -1,6 +1,6 @@
-# React Typescript UI Components Library Starter Kit
+# UI Component Library Example
 
-> The starter kit for building UI components library with React and Typescript.
+> UI Component library with React and Typescript.
 
 ## Features
 
@@ -8,6 +8,7 @@
 - Built with React, Typescript, Rollup
 - [Storybook](https://storybook.js.org/) integration
 - Linting with Eslint, Prettier
+- Styling with CSS modules
 
 ## Available Scripts
 
@@ -28,6 +29,13 @@ yarn storybook
 ```
 yarn build-storybook
 ```
+
+## Useful links
+
+- [What are CSS Modules and why do we need them?](https://css-tricks.com/css-modules-part-1-need/)
+- [Is Lerna needed anymore with NPM 7.0.0's workspaces?](https://stackoverflow.com/questions/64909635/is-lerna-needed-anymore-with-npm-7-0-0s-workspaces)
+- [TypeScript "paths" in monorepo](https://github.com/vercel/turbo/discussions/620)
+- [[Bug] Doesn't work with CSS modules](https://github.com/storybookjs/addon-postcss/issues/29)
 
 ## License
 

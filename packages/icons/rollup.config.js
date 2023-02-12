@@ -28,7 +28,7 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json" }),
+      typescript({ tsconfig: "./tsconfig.build.json" }),
     ],
     external: ["react", "react-dom"],
   },

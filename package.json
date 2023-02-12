@@ -4,14 +4,15 @@
   "version": "0.0.1",
   "private": true,
   "workspaces": [
-    "packages/core",
     "packages/icons",
+    "packages/core",
     "packages/storybook"
   ],
   "repository": "git@github.com:prodev-ag/react-typescript-components-library-starter.git",
   "author": "ag <prodev.ag@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "cleanup": "yarn workspaces run cleanup",
     "build": "export NODE_ENV=production && yarn workspaces run build",
     "storybook": "yarn workspace @library/storybook storybook",
     "build-storybook": "yarn workspace @library/storybook build-storybook"
