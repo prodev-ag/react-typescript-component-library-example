@@ -1,0 +1,11 @@
+{
+  "name": "@library/design-tokens",
+  "version": "0.0.1",
+  "files": ["dist"],
+  "license": "MIT",
+  "main": "dist/design-tokens.cjs",
+  "module": "dist/design-tokens.esm.js",
+  "scripts": {
+    "build": "echo 'not implemented'"
+  }
+}

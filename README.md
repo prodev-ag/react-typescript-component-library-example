@@ -10,7 +10,7 @@
 - Linting with Eslint, Stylelint, Commitlint
 - Formating with Prettier
 - Styling with CSS modules
-- Git hooks with Hysky, Lint-stages
+- Git hooks with Hysky, Lint-staged
 
 ## Available Scripts
 

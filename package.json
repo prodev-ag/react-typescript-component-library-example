@@ -3,7 +3,7 @@
   "description": "Starter kit for creating react/typescript components library",
   "version": "0.0.1",
   "private": true,
-  "workspaces": ["packages/icons", "packages/core", "packages/storybook"],
+  "workspaces": ["packages/design-tokens", "packages/icons", "packages/core", "packages/storybook"],
   "repository": "git@github.com:prodev-ag/react-typescript-components-library-starter.git",
   "author": "ag <prodev.ag@gmail.com>",
   "license": "MIT",
