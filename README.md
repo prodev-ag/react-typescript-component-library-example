@@ -7,8 +7,10 @@
 - Created as a monoreporo with [Yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/) to support multiple packages
 - Built with React, Typescript, Rollup
 - [Storybook](https://storybook.js.org/) integration
-- Linting with Eslint, Prettier
+- Linting with Eslint, Stylelint, Commitlint
+- Formating with Prettier
 - Styling with CSS modules
+- Git hooks with Hysky, Lint-stages
 
 ## Available Scripts
 
@@ -37,6 +39,7 @@ yarn build-storybook
 - [TypeScript "paths" in monorepo](https://github.com/vercel/turbo/discussions/620)
 - [[Bug] Doesn't work with CSS modules](https://github.com/storybookjs/addon-postcss/issues/29)
 - [A Guide to CSS Modules with React](https://maxrohde.com/2022/08/12/a-guide-to-css-modules-with-react)
+- [CSS Modules — убрать нельзя оставить](https://www.youtube.com/watch?v=A-C9MFK56fc)
 
 ## License
 
