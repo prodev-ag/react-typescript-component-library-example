@@ -8,6 +8,7 @@
   "scripts": {
     "cleanup": "rimraf ./dist",
     "build:tokens": "node ./scripts/generate-design-tokens.js",
+    "build:tokens:watch": "nodemon -e yaml --quiet --watch src --exec 'yarn build:tokens'",
     "build": "export NODE_ENV=production && yarn cleanup && mkdir 'dist' && yarn build:tokens"
   }
 }
