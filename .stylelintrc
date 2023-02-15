@@ -5,5 +5,8 @@
   ],
   "plugins": [
     "stylelint-order"
-  ]
+  ],
+  "rules": {
+    "color-function-notation": null
+  }
 }

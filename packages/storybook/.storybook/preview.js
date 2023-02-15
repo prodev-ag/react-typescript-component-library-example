@@ -1,3 +1,5 @@
+import "@library/design-tokens/dist/custom-properties.css";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +8,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};

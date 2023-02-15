@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "files": ["dist"],
   "license": "MIT",
-  "main": "dist/design-tokens.cjs",
-  "module": "dist/design-tokens.esm.js",
+  "main": "dist/custom-properties.css",
+  "module": "dist/custom-properties.css",
   "scripts": {
-    "build": "echo 'not implemented'"
+    "cleanup": "rimraf ./dist",
+    "build:tokens": "node ./scripts/generate-design-tokens.js",
+    "build": "export NODE_ENV=production && yarn cleanup && mkdir 'dist' && yarn build:tokens"
   }
 }

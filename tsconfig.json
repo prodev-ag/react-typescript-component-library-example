@@ -5,6 +5,7 @@
     "paths": {
       "@library/core": ["core/src"],
       "@library/icons": ["icons/src"],
+      "@library/design-tokens": ["design-tokens"]
     }
   }
 }
