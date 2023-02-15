@@ -17,7 +17,9 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "devDependencies": {
+  "dependencies": {
+    "@commitlint/cli": "^17.4.3",
+    "@commitlint/config-conventional": "^17.4.3",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
