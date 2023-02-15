@@ -3,4 +3,5 @@ module.exports = {
   '*.yaml': ['prettier --write --parser yaml'],
   '*.json': ['prettier --write --parser json'],
   '*.{js,ts,tsx}': ['prettier --write', 'eslint --fix'],
+  '*.css': ['stylelint'],
 };
