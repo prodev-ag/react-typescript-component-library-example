@@ -1,18 +1,17 @@
-const path = require('path')
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
-const postcssModules = require('postcss-modules')
+const path = require("path");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = {
   core: {
-    builder: 'webpack5',
+    builder: "webpack5",
   },
   stories: [
     "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+    "../stories/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   addons: [
     {
-      name: '@storybook/addon-postcss',
+      name: "@storybook/addon-postcss",
       options: {
         styleLoaderOptions: {},
         cssLoaderOptions: {
@@ -21,9 +20,12 @@ module.exports = {
           importLoaders: 1,
         },
         postcssLoaderOptions: {
-          implementation: require('postcss'),
+          implementation: require("postcss"),
           postcssOptions: {
-            plugins: [],
+            plugins: [
+              require("postcss-nested"),
+              require("postcss-nested-ancestors"),
+            ],
           },
         },
       },
@@ -34,20 +36,21 @@ module.exports = {
   ],
   framework: "@storybook/react",
   webpackFinal: async (config) => {
-    config.resolve.plugins = [new TsconfigPathsPlugin({ extensions: config.resolve.extensions })]
+    config.resolve.plugins = [
+      new TsconfigPathsPlugin({ extensions: config.resolve.extensions }),
+    ];
     config.module.rules.push({
       test: /\.(tsx)?$/,
       use: [
         {
-          loader: require.resolve('ts-loader'),
+          loader: require.resolve("ts-loader"),
           options: {
-            configFile: path.resolve(__dirname, '../tsconfig.json'),
+            configFile: path.resolve(__dirname, "../tsconfig.json"),
           },
         },
       ],
-    })
-    config.resolve.extensions.push('.ts', '.tsx')
-    return config
+    });
+    config.resolve.extensions.push(".ts", ".tsx");
+    return config;
   },
-
-}
+};

@@ -5,6 +5,9 @@ import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
 import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
+import postcssNested from "postcss-nested";
+import postcssNestedAncestors from "postcss-nested-ancestors";
+import autoprefixer from "autoprefixer";
 
 import pkg from "./package.json" assert { type: "json" };
 
@@ -32,7 +35,11 @@ export default [
       typescript({
         tsconfig: "./tsconfig.build.json",
       }),
-      postcss(),
+      postcss({
+        modules: true,
+        localIdentName: "[name]__[local]___[hash:base64:5]",
+        plugins: [autoprefixer(), postcssNestedAncestors(), postcssNested()],
+      }),
     ],
     external: ["@library/icons"],
   },
