@@ -42,6 +42,7 @@ yarn build-storybook
 - [CSS Modules — убрать нельзя оставить](https://www.youtube.com/watch?v=A-C9MFK56fc)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#summary)
 - [https://blog.logrocket.com/commitlint-write-more-organized-code/](https://blog.logrocket.com/commitlint-write-more-organized-code/)
+- [Я 💛 Фронтенд. Я ❤ Storybook - Семён Левенсон](https://www.youtube.com/watch?v=ZUo9Rv_--F4)
 
 ## License
 
