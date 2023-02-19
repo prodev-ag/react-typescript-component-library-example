@@ -41,6 +41,7 @@ yarn build-storybook
 - [A Guide to CSS Modules with React](https://maxrohde.com/2022/08/12/a-guide-to-css-modules-with-react)
 - [CSS Modules — убрать нельзя оставить](https://www.youtube.com/watch?v=A-C9MFK56fc)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#summary)
+- [https://blog.logrocket.com/commitlint-write-more-organized-code/](https://blog.logrocket.com/commitlint-write-more-organized-code/)
 
 ## License
 
