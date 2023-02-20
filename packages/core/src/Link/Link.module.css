@@ -2,7 +2,8 @@
   text-decoration: none;
   cursor: pointer;
   font-family: var(--font-family-primary);
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
 
   &.underlined {
     padding-bottom: 1px;
