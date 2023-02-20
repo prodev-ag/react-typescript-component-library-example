@@ -9,7 +9,7 @@ const prettierConfig = rcfile('prettier');
 const definitions = yaml.parse(fs.readFileSync(path.join(__dirname, '../src/definition.yaml'), 'utf8'));
 
 const endProgram = (message) => {
-  console.error(`Custom Properties Error: ${message}`);
+  console.error(`Building tokens Error: ${message}`);
   process.exit(1);
 };
 
