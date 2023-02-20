@@ -10,6 +10,7 @@
   "scripts": {
     "cleanup": "yarn workspaces run cleanup",
     "build": "export NODE_ENV=production && yarn workspaces run build",
+    "build:tokens": "yarn workspace @library/design-tokens build",
     "dev": "yarn workspace @library/design-tokens build:tokens:watch & yarn storybook",
     "storybook": "yarn workspace @library/storybook storybook",
     "build-storybook": "yarn workspace @library/storybook build-storybook",

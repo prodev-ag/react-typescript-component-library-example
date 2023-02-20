@@ -82,21 +82,21 @@ tokens:
       label: Spacings
       prefix: spacing
       choices:
-        spacing-1: 5px
-        spacing-2: 10px
-        spacing-3: 15px
-        spacing-4: 20px
-        spacing-5: 25px
-        spacing-6: 30px
-        spacing-7: 35px
-        spacing-8: 40px
-        spacing-9: 50px
-        spacing-10: 60px
-        spacing-11: 70px
-        spacing-12: 80px
-        spacing-13: 90px
-        spacing-14: 100px
-        spacing-15: 140px
+        spacing-xxs: 5px
+        spacing-xs: 10px
+        spacing-s: 15px
+        spacing-m: 20px
+        spacing-l: 25px
+        spacing-2xl: 30px
+        spacing-3xl: 35px
+        spacing-4xl: 40px
+        spacing-5xl: 50px
+        spacing-6xl: 60px
+        spacing-7xl: 70px
+        spacing-8xl: 80px
+        spacing-9xl: 90px
+        spacing-10xl: 100px
+        spacing-11xl: 140px
 
     transitions:
       label: Transitions
